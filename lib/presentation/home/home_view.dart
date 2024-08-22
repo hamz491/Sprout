@@ -1,22 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:sprout/core/utils/spacing.dart';
+import 'package:sprout/presentation/home/widgets/homeView_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        body: Column(
-          children: [
-            verticalSpace(17),
-            Row(
-              children: [],
-            ),
-          ],
-        ),
+        body: HomeviewBody(),
       ),
     );
   }
