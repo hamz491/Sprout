@@ -13,57 +13,22 @@ class PostCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 133,
+      height: 81,
       decoration: const BoxDecoration(
         color: Color(0xffE9F1F2),
       ),
       child: Padding(
-        padding: EdgeInsets.only(left: 30.w, top: 10.h, right: 5.w),
-        child: Column(
+        padding: EdgeInsets.only(left: 15.w, right: 10.w),
+        child: Row(
           children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 20.h),
-                  child: Row(
-                    children: [
-                      const CustomCircleImage(),
-                      horizontalspace(10),
-                      const CustomTextBar(),
-                    ],
-                  ),
-                ),
-                const Icon(
-                  Icons.more_vert,
-                  color: Color(0xffADADAD),
-                ),
-              ],
+            const CustomCircleImage(),
+            horizontalspace(8),
+            const CustomTextBar(),
+            horizontalspace(19),
+            const CustomIconTxt(
+              icon: Icon(Icons.image_outlined, color: MyColors.green, size: 18),
+              txt: "Upload Photo",
             ),
-            verticalSpace(24),
-            Padding(
-              padding: EdgeInsets.only(right: 51.w),
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  CustomIconTxt(
-                    icon: Icon(
-                      Icons.image_outlined,
-                      color: MyColors.green,
-                    ),
-                    txt: "Upload Photo",
-                  ),
-                  CustomIconTxt(
-                    icon: Icon(
-                      Icons.sentiment_very_satisfied_outlined,
-                      color: Color(0xffF8A6B6),
-                    ),
-                    txt: "Activity/Felling",
-                  ),
-                ],
-              ),
-            )
           ],
         ),
       ),

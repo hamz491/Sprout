@@ -7,10 +7,10 @@ class CustomTextBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 265.w,
-      height: 39.h,
+      width: 210.w,
+      height: 34.h,
       decoration: BoxDecoration(
-        color: const Color(0xffD9D9D9).withOpacity(.4),
+        color: Colors.white,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(
@@ -22,13 +22,9 @@ class CustomTextBar extends StatelessWidget {
               "What Do You Think Sara?",
               style: TextStyle(
                 fontSize: 11.sp,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 color: const Color(0xff898A8D),
               ),
-            ),
-            const Icon(
-              Icons.mic,
-              color: Color(0xff979797),
             ),
           ],
         ),
