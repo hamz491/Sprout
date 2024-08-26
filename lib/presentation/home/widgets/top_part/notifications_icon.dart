@@ -25,24 +25,22 @@ class NotificationsIcon extends StatelessWidget {
         Stack(
           alignment: AlignmentDirectional.topEnd,
           children: [
-            Image.asset("assets/images/noti.png"),
-            Image.asset("assets/images/red.png"),
-            //  Icon(
-            //   Icons.notifications_none,
-            //   size: 22,
-            // ),
-            // Container(
-            //   height: 8.h,
-            //   width: 8.w,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.circle,
-            //     color: Colors.red,
-            //     border: Border.all(
-            //       color: Colors.white,
-            //       width: 1,
-            //     ),
-            //   ),
-            // ),
+            const Icon(
+              Icons.notifications_none,
+              size: 22,
+            ),
+            Container(
+              height: 8.h,
+              width: 8.w,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.red,
+                border: Border.all(
+                  color: Colors.white,
+                  width: 1,
+                ),
+              ),
+            ),
           ],
         ),
       ],

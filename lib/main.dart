@@ -5,13 +5,13 @@ import 'package:sprout/core/routes/app_router.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.white,
+    statusBarColor: Color(0xffF4F6FA),
   ));
-  runApp(Sprout(approuter: AppRouter()));
+  runApp(MyApp(approuter: AppRouter()));
 }
 
-class Sprout extends StatelessWidget {
-  const Sprout({super.key, required this.approuter});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key, required this.approuter});
   final AppRouter approuter;
   @override
   Widget build(BuildContext context) {
@@ -22,6 +22,7 @@ class Sprout extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: approuter.generateRoute,
+        theme: ThemeData(fontFamily: "Urbanist"),
       ),
     );
   }
