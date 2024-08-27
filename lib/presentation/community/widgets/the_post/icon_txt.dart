@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sprout/core/utils/constants.dart';
 import 'package:sprout/core/utils/spacing.dart';
 
-class CustomIconTxt extends StatelessWidget {
-  const CustomIconTxt({
+class IconTxt extends StatelessWidget {
+  const IconTxt({
     super.key,
     required this.icon,
     required this.txt,

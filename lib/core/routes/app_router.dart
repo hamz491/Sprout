@@ -7,6 +7,7 @@ import 'package:sprout/sprout.dart';
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
+      
       case Routes.sprout:
         return MaterialPageRoute(
           builder: (context) {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sprout/core/utils/spacing.dart';
-import 'package:sprout/presentation/community/widgets/my_post/custom_icon_txt.dart';
+
+import 'icon_txt.dart';
 
 class LikeComentShare extends StatelessWidget {
   const LikeComentShare({super.key});
@@ -11,17 +12,17 @@ class LikeComentShare extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const CustomIconTxt(
+        const IconTxt(
           icon: Icons.favorite_border,
           txt: "20",
         ),
         horizontalspace(47),
-        const CustomIconTxt(
+        const IconTxt(
           icon: FontAwesomeIcons.comment,
           txt: "13",
         ),
         horizontalspace(47),
-        const CustomIconTxt(
+        const IconTxt(
           icon: FontAwesomeIcons.share,
           txt: "Share",
         ),

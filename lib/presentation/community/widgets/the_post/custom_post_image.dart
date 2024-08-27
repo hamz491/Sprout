@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomPostImage extends StatelessWidget {
-  const CustomPostImage({super.key});
-
+  const CustomPostImage({super.key, required this.postImage});
+  final String postImage;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,9 +12,9 @@ class CustomPostImage extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        image: const DecorationImage(
+        image: DecorationImage(
           image: AssetImage(
-            "assets/images/mypost_background.png",
+            postImage,
           ),
           fit: BoxFit.fill,
         ),

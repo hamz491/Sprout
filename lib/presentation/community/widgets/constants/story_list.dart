@@ -23,4 +23,8 @@ List<Widget> storyList = [
     image: "assets/story_images/story4.png",
     label: "Sandra76",
   ),
+  const CharacterTile(
+    image: "assets/story_images/story2.png",
+    label: "Mogoio8",
+  ),
 ];

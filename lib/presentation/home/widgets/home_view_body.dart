@@ -12,7 +12,6 @@ import 'package:sprout/presentation/home/widgets/builders_part/workout_lessons_c
 
 class HomeviewBody extends StatelessWidget {
   const HomeviewBody({super.key});
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

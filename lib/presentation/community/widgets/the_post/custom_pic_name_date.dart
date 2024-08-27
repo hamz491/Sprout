@@ -3,22 +3,29 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sprout/core/utils/spacing.dart';
 
 class CustomPicNameDate extends StatelessWidget {
-  const CustomPicNameDate({super.key});
-
+  const CustomPicNameDate({
+    super.key,
+    required this.profileImage,
+    required this.name,
+    required this.date,
+  });
+  final String profileImage;
+  final String name;
+  final String date;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const CircleAvatar(
+        CircleAvatar(
           radius: 21,
-          backgroundImage: AssetImage("assets/images/personal_image.png"),
+          backgroundImage: AssetImage(profileImage),
         ),
         horizontalspace(5),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Sara_draz",
+              name,
               style: TextStyle(
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w700,
@@ -27,7 +34,7 @@ class CustomPicNameDate extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 3),
               child: Text(
-                "14m ago",
+                date,
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w400,
